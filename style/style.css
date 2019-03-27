@@ -28,29 +28,43 @@ h1, h2, h3, h4, h5, h6
   padding: 15px 0 5px 0;}
 
 h2
-{ font: normal 25px 'arial', sans-serif;
+{ font: normal 26px 'arial', sans-serif;
   color: #000000;}
 
 h3
 { font: normal 19px 'arial', sans-serif;}
 
-h4, h5, h6
+h4, h6
 { margin: 0;
   padding: 0 0 5px 0;
   font: normal 17px arial, sans-serif;
-  color: #B60000;}
+  color: #000000;
+font-weight: bold;}
+
+h5
+{ margin: 0;
+  padding: 0 0 5px 0;
+  font: normal 17px arial, sans-serif;
+  color: #000000;}
 
 h5, h6
 { font: italic 14pxs 'arial', sans-serif;
   color: #888;}
 
 h6
-{ color: #362C20;}
+{ font: normal 17px arial, sans-serif;
+  color: #362C20;}
 
-a, a:hover
+a
 {
   color: #635B53;
   text-decoration: none;}
+
+a:hover
+{
+  color: #DCDCDC;
+  text-decoration: none;}
+
 
 
   img {
@@ -306,7 +320,7 @@ height: 22px;}
 #footer
 { width: 80%;
   font-family: 'arial', sans-serif;
-  font-size: 90%;
+  font-size: 14px;
   height: 28px;
   padding: 20px 0 5px 0;
   text-align: center;
