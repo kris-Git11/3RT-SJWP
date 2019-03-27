@@ -1,0 +1,49 @@
+body{
+  font-family: "Roboto";
+  background-color: #EEEEEE;
+}
+
+.main{
+  margin-bottom: 60px;
+}
+
+.nav{
+  overflow: hidden;
+  background-color: #5b92e5;
+  text-align: center;
+  padding: 20px;
+}
+
+.nav a{
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+.stupac p{
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-indent: 40px;
+}
+
+.stupac{
+  border: 1px solid #ADADAD;
+  border-radius: 10px;
+  float:left;
+  width: 33.33%;
+}
+
+.footer{
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #EEEEEE;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 99999999999999999;
+}
