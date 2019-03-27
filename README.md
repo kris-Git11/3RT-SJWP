@@ -1,6 +1,5 @@
-# Lovro Makovec, 3RT
+# Ustav Republike Hrvatske – web projekt
 Skriptni jezici i web programiranje
 
-Moja mapa o stranici Ustava RH
+Lovro Makokvec, 3.RT
 
-DA, OVO JE MOJE.. – MAKOVEC
