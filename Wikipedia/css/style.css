@@ -1,0 +1,172 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-style: normal;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+a {
+  color: white;
+}
+
+.sexy_line{
+    display:block;
+    border:none;
+    color:white;
+    height:2px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 550, from(#000), to(#e2e2e2));
+}
+
+li {
+  font-style: normal;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #aacbff;
+  border-radius: 20px;
+}
+
+
+
+body {
+  margin: 0;
+  background: #e2e2e2;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+
+
+/* Footer */
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+   border-radius: 15px;
+   font-style: normal;
+   font-family: Verdana;
+   font-size: 18px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-style: normal;
+  font-family: Verdana;
+  font-size: 18px;
+  border-radius: 20px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/150px-Wikipedia-logo-v2.svg.png");
+  background-repeat: no-repeat;
+
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  font-style: normal;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-style: normal;
+  font-family: Verdana;
+  font-size: 18px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input[type=text] {
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #e2e2e2;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  text-color: white;
+
+}
+
+input[type=text]:focus {
+  width: 100%;
+  font-color: white;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
