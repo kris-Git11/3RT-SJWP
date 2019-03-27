@@ -3,4 +3,4 @@ Skriptni jezici i web programiranje
 
 Mapa za radove
 
-ako ovo uredim, svugdje se obriše?
+DA, OVO JE MOJE.. – MAKOVEC
