@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<meta charset="UTF-8">
+<style>
+</style>
+</head>
+<body>
+
+  <div id="navbar">
+    <a href="index.html"><img src="media/raf-logo.png" alt="RAF" style="width:50px;height:15px;"class="responsive active"></a>
+    <a href="nasaorg.html">Naša Organizacija</a>
+    <a href="zrakoplovi.html">Zrakoplovi</a>
+    <a href="povijest.html">Povijest</a>
+    <a href="prijavise.html" style="float:right">Prijavi se!</a>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1 class="centered">Prijavi se na Kraljevske Zračne Snage</h1>
+      <p class="centeredBellow"><b>Više od stotinu godina Kraljevska zračna snaga
+        branila je nebo Britanije i projicirala britansku moć i utjecaj širom svijeta.</b></p>
+      <video autoplay muted loop id="myVideo" class="responsive">
+        <source src="media/RAF2_index.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Kraljevske Zračne Snage</h2>
+        <h5>Više od stotinu godina Kraljevska zračna snaga
+          branila je nebo Britanije i projicirala britansku moć i utjecaj širom svijeta.</h5>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <img id="myImg3" src="media/varazdin.jpg" alt="Spitfire" class="responsive myImgClass">
+        <p>Prijavi se da postaneš novi član i pilot Kraljevskih Zračnih Snaga!</p>
+        <p>Kraljevsko ratno zrakoplovstvo (RAF) je zračna ratna sila Ujedinjenog Kraljevstva.
+          Nastala krajem Prvog svjetskog rata 1. travnja 1918., to je najstarija neovisna zrakoplovna
+          sila na svijetu. Nakon pobjede nad Središnjim silama 1918. RAF se pojavio kao tada najveća zrakoplovna
+          sila na svijetu. Od svog osnivanja, RAF je preuzeo značajnu ulogu u britanskoj vojnoj povijesti.
+           Konkretno, odigrala je veliku ulogu u Drugom svjetskom ratu gdje je vodila svoju najpoznatiju kampanju,
+           Bitku za Britaniju.</p>
+        <button class="button" onclick="window.location.href = 'prijavise.html';">Prijavi se!</button>
+      </div>
+    </div>
+      <div class="rightcolumn">
+      <div class="card">
+        <h3>Medija:</h3>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+         <img id="myImg" src="media/teamlightning.jpg" alt="Team Lightning" class="responsive myImgClass">
+         <img id="myImg1" src="media/chrislyndon.jpg" alt="Chris Lyndon" class="responsive myImgClass">
+         <img id="myImg2" src="media/davidcooper.png" alt="David Cooper" class="responsive myImgClass">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h3>The Royal Air Force</h3>
+    <p>All rights reserved</p>
+  </div>
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";''
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img1 = document.getElementById('myImg1');
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img2 = document.getElementById('myImg2');
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img3 = document.getElementById('myImg3');
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>

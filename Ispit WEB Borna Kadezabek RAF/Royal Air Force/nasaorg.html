@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css.css">
+<meta charset="UTF-8">
+<style>
+
+</style>
+</head>
+<body>
+
+  <div id="navbar">
+    <a href="index.html"><img src="media/raf-logo.png" alt="RAF" style="width:50px;height:15px;"class="responsive"></a>
+    <a class="active" href="nasaorg.html">Naša Organizacija</a>
+    <a href="zrakoplovi.html">Zrakoplovi</a>
+    <a href="povijest.html">Povijest</a>
+    <a href="prijavise.html" style="float:right">Prijavi se!</a>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h1 class="centered"></h1>
+      <video autoplay muted loop id="myVideo" class="responsive">
+        <source src="media/Red Arrows.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>Odgovaramo na prijetnje</h2>
+        <h5>Moramo odma biti spremni, noć ili dan, 365 dana u godini, 24 sata dnevno.</h5>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <img id="myImg3" src="media/responding to threat.jpg" alt="Carrier" class="responsive myImgClass">
+        <p>Velika Britanija i naši saveznici suočavaju se s prijetnjama u neizvjesnom svijetu,
+          od neovlaštenih zrakoplova koji ulaze u zaštićeni zračni prostor, do cyber napada.
+          Snage za brzo reagiranje (QRA) sa sjedištem u RAF Lossiemouthu (sjeveroistočna Škotska),
+          RAF Coningsby (istočna Engleska) i Falklandskim otocima (južni Atlantik)
+          spremne su za nekoliko minuta prevariti najsuvremenije Eurofighter Typhoons kako bi presreli prijetnje.</p>
+      </div>
+      <div class="card">
+        <h2>Spriječavamo sukob</h2>
+        <h5>Spriječite sukob
+            RAF surađuje s partnerima širom svijeta kako bi ojačao nacionalnu i međunarodnu sigurnost i
+            zaštitimo interese i utjecaj Ujedinjenog Kraljevstva i naših saveznika.</h5>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <img id="myImg4" src="media/prevent conflict.jpeg" alt="Prevent Conflict" class="responsive myImgClass">
+        <p>Prepoznajemo i upravljamo prijetnjama
+          prije nego što se materijaliziraju putem inteligencije, nadzora i izviđanja (ISR).
+          Možemo brzo rasporediti zrakoplove i osoblje širom svijeta kako bismo spriječili sukobe i
+          porazili naše protivnike ako je potrebno.Trenutno smo aktivni na četiri kontinenta sa
+          značajnim operacijama u istočnoj Europi,
+          južnom Atlantiku i Mediteranu. Naša blizina nestabilnim regijama i potencijalnim protivnicima
+          osigurava zračnoj moći obuzdavanje prijetnji i destabilizirajućeg ponašanja.</p>
+      </div>
+      <div class="card">
+        <h2>Radimo u partnerstvu</h2>
+        <h5>Raditmo u partnerstvu.
+            RAF surađuje s vladinim, vojnim i civilnim partnerima u Velikoj Britaniji i inozemstvu u promicanju sigurnosti,
+            prosperiteta i nacionalnih interesa Ujedinjenog Kraljevstva diljem svijeta.</h5>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+        <img id="myImg5" src="media/deliver aid.jpeg" alt="Deliver Aid" class="responsive myImgClass">
+        <p>Zračne snage su najučinkovitije u zajedničkom djelovanju s drugim vojnim službama kao što su britanska vojska i kraljevska mornarica,
+          te s vladinim odjelima, koji rade na zajedničkom nacionalnom cilju. Ovo nazivamo pristupom punog spektra.Kontinuirano obučavamo i
+          raspoređujemo s oružanim snagama naših saveznika u NATO-u i
+          globalnim partnerima na mjestima kao što su Estonija, Rumunjska i borba protiv ISIS-a u Iraku i Siriji.Održavanje dobrih odnosa s našim
+          međunarodnim partnerima znači da možemo djelovati iz njihovih baza kako bismo proširili naš globalni doseg.
+          Kao zrakoplovne snage svjetske klase, također savjetujemo i obučavamo druge zrakoplovne snage da izgrade svoje sposobnosti da
+          odgovore na prijetnje i spriječe sukobe.</p>
+      </div>
+    </div>
+      <div class="rightcolumn">
+      <div class="card">
+        <h3>Medija:</h3>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+         <img id="myImg" src="media/soldiers.jpg" alt="" class="responsive myImgClass">
+         <img id="myImg1" src="media/Prince-William.jpg" alt="" class="responsive myImgClass">
+         <img id="myImg2" src="media/teamlightning.jpg" alt="" class="responsive myImgClass">
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h3>The Royal Air Force</h3>
+    <p>All rights reserved</p>
+  </div>
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";''
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img1 = document.getElementById('myImg1');
+img1.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img2 = document.getElementById('myImg2');
+img2.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img3 = document.getElementById('myImg3');
+img3.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img4 = document.getElementById('myImg4');
+img4.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img5 = document.getElementById('myImg5');
+img5.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
