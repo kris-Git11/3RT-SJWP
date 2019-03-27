@@ -42,11 +42,7 @@ a {
   margin-bottom: 10%;
 }
 
-.footer {
-  height: 100px;
-  background-color: #1F1F22;
-  bottom: 0;
-}
+
 
 .maindiv{
   text-align: center;
@@ -101,7 +97,6 @@ a {
   margin-left: 5%;
   margin-top: 1%;
   margin-bottom: 1%;
-  height: 90vh;
   text-align: center;
 }
 
@@ -110,10 +105,15 @@ a {
   border: orange 2px solid;
   border-radius: 1em;
   width: 60%;
-  min-height: 90vh;
   margin-right: 5%;
   margin-top: 1%;
   margin-bottom: 1%;
   padding-left: 10px;
   text-align: left;
+}
+
+footer {
+  height: 100px;
+  background-color: #1F1F22;
+  bottom: 0;
 }
