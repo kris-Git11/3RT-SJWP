@@ -1,5 +1,13 @@
 html{height: 100%;}
 
+div.crta {
+  height: 1px;
+  margin: auto;
+  background-color: #888888;
+  width: 50%;
+
+}
+
 body
 { font-family: 'arial', sans-serif;
   padding: 0px;
@@ -33,7 +41,7 @@ h4, h5, h6
   color: #B60000;}
 
 h5, h6
-{ font: italic 14px 'arial', sans-serif;
+{ font: italic 14pxs 'arial', sans-serif;
   color: #888;}
 
 h6
