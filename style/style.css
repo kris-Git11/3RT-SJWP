@@ -53,10 +53,14 @@ a, a:hover
   text-decoration: none;}
 
 
-img
-{ border: 0px;
-  margin: 0px;
-  padding: 0px;}
+  img {
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 5px;
+    width: 40%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
 a
 { outline: none;}
