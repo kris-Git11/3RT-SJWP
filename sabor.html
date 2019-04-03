@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -16,9 +17,8 @@
     </div>
 
     <div class="nav">
-      <a href="index.php">Naslovna</a>
+      <a href="index.html">Naslovna</a>
       <a href="sabor.html" style="text-decoration: underline; color: yellow;">Sabor</a>
-      <a href="#">???</a>
     </div>
 
     <div class="main">
@@ -29,25 +29,46 @@
         </div>
         <p><span style="font-style: italic;">(...) u članku se, iz nama nedokučivih razloga, zlonamjerno iznosi neistinita tvrdnja da je u Saboru zaposlena <span style="font-weight: bold; color: red;">osoba zadužena samo za „punjenje mobitela“</span>, čime se svjesno narušava ugled institucije. (...) ističemo da takvo radno mjesto  nije, niti je ikada bilo ustrojeno (...)</span> – komentar Hrvatskog sabora na novinski članak Večernjeg lista, 14.1.2019.</p>
         <p><span style="font-style: italic;">(...) Smijao se i predsjedavajući Željko Reiner, no ipak je zastupnike odlučio poučiti: "Kolegice i kolege, pogledajte se sad međusobno i <span style="font-weight: bold; color: red;">nek' nas narod gleda.</span>" Panenić se pribrao i nastavio svoj govor o bananama: (...)</span> – Dnevnik.hr, 2.3.2018.</p>
+        <br>
+        <p>Deveti saziv Hrvatskog sabora je konstituiran 14.10.2016. godine izborom Bože Petrova za predsjednika, a zbog smjene ministara iste stranke kao i predsjednika Sabora, Božo Petrov je 4.5.2017. <span style="font-weight: bold; color: red;">podnio ostavku.</span></p>
+        <p>Petog svibnja 2017. godine je za novog predsjednika izabran Gordan Jandroković, čime HDZ po prvi put od 2000. godine drži sve čelne državne funkcije.</p>
       </div>
 
       <div class="stupac">
         <div style="text-align: center;">
-          <h2 style="margin: 0px;">Općenito</h2>
+          <h2 style="margin: 0px;">Dostupnost informacija</h2>
         </div>
 
+        <p>Hrvatski sabor (kao i ostale hrvatske institucije) imaju "politiku otvorenih vrata", što znači da su sve informacije o radu Sabora dostupne javnosti.</p>
+        <p>Pod tim informacijama se misli na:
+          <ul>
+            <li>Dokumente u zakonodavnoj proceduri</li>
+            <li>Popis saborskih zastupnika</li>
+            <li>Stenograme i videozapise sjednica</li>
+            <li>Redoslijed prijavljenih govornika za aktualnu sjednicu</li>
+            <li>Potpuno funkcionalan API zastupnika i sjednica</li>
+            <li>...</li>
+          </ul>
+        </p>
 
       </div>
 
       <div class="stupac" style="width: 32%; padding-left: 3px;">
         <div style="text-align: center;">
-          <h2 style="margin: 0px;">Korisni linkovi</h2>
+          <h2 style="margin: 0px;">Ismijavanje</h2>
         </div>
 
+        <p>Ovaj visoki dom je često ismijavan od strane medija te samih građana. Rad Sabora bi trebao biti uzet za ozbiljno i ni na koji način biti tema ismijavanja i izrugivanja.</p>
+        <p>Hrvatski sabor donosi zakone o kojima ovisi društvo koje se ostvaruje u otvorenom dijalogu s Vladom. Zato je 2015. godine pokrenut portal <span style="font-style: italic">e-Savjetovanja</span> u koji se svi zainteresirani građani besplatno mogu uključiti.
 
       </div>
 
-      <form style="clear: both;">
+      <div id='gumb' style="clear: both;">
+        <br><br><br>
+        <button onclick='daj_mi_formu()' style="font-size: 20px;">Prikaži formu</button>
+      </div>
+
+      <form style="clear: both; display:none;">
         <br>
         <p style="font-style: italic">Prijedlozi za poboljšanje stranice:</p>
         <input type="text" placeholder="ime"/>
@@ -64,8 +85,15 @@
 
     <div class="footer">
       <hr>
-      <p>© Lovro Makovec, 3RT <br> <a href="uvjeti.html">Zabranjeno je umnažanje, distribucija, tiskanje i javno prikazivanje ove stranice bez pismene (ili usmene, kada se koristi u školske svrhe) dozvole autora!</a></p>
+      <p>© Lovro Makovec, 3RT <br> <a href="#">Zabranjeno je umnažanje, distribucija, tiskanje i javno prikazivanje ove stranice bez pismene (ili usmene, kada se koristi u školske svrhe) dozvole autora!</a></p>
     </div>
+
+    <script>
+      function daj_mi_formu(){
+        $("#gumb").hide();
+        $("form").show();
+      }
+    </script>
 
   </body>
 </html>
