@@ -1,42 +1,165 @@
 <!doctype html>
-<html lang="en">
+<html lang="hr">
+
+
 <head>
   <meta charset="utf-8">
-  <title>Color</title>
-  <link rel="stylesheet" href="css/Style.css">
+  <title>Boja</title>
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
+
   <div class="barbar">
     <div class="navbar">
-      <h2 class="left"><a href="#">HOME</a></h2>
-      <h2 class="left"><a href="#">COLOR LIST</a></h2>
-      <h2 class="right"><a href="#">LOGIN IN</a></h2>
+      <h2 class="left"><a href="index.html">BOJA</a></h2>
+      <h2 class="left"><a href="#">LISTA BOJA</a></h2>
+      <h2 class="right"><a href="login.html">PRIJAVI SE</a></h2>
+      <a href="#" onclick="darkMode()" class="fa fa-adjust fa-2x right"></a>
+      <div class="dropdown">
+        <i class="dropbtn fa fa-paint-brush fa-2x" aria-hidden="true"></i>
+        <div class="dropdown-content">
+          <a href="#" class="blue" onclick="setBlue()"></a>
+          <a href="#" class="green" onclick="setGreen()"></a>
+          <a href="#" class="yellow" onclick="setYellow()"></a>
+          <a href="#" class="orange" onclick="setOrange()"></a>
+          <a href="#" class="red" onclick="setRed()"></a>
+          <a href="#" class="pink" onclick="setPink()"></a>
+        </div>
+      </div>
     </div>
     <hr>
   </div>
 
+
 <div class="maindiv">
-
   <div class="mainleft">
+
+    <img src="../Images/color_wheel.png" alt="color wheel">
+    <p>Kružni prikaz boja</p>
+    <hr>
+    <p>Raspon valnih duljina</p>
+    <ul class="raspon">
+      <li style="color: red">crvena - 480 – 405 THz</li>
+      <li style="color: orange">narančasta - 510 – 480 THz</li>
+      <li style="color: yellow">žuta - 530 – 510 THz</li>
+      <li style="color: limegreen">zelena - 600 – 530 THz</li>
+      <li style="color: cyan">cijan - 620 – 600 THz</li>
+      <li style="color: dodgerblue">plava - 680 – 620 THz</li>
+      <li style="color: purple">ljubičasta - 790 – 680 THz</li>
+    </ul>
+    <hr>
+    <img src="../Images/prism.png" alt="prizma">
+    <p>Disperzija boja</p>
+    <hr>
+    <p>Sadržaj</p>
+    <ul class="content">
+      <li><a href="#C1">Boja</a></li>
+      <li><a href="#C2">Objašnjenje</a></li>
+      <li><a href="#C3">Simbolicko znacenje boja</a></li>
+      <li><a href="#C4">Psihološko djelovanje boja</a></li>
+      <li><a href="#C5">Prostorno djelovanje boja</a></li>
+      <li><a href="#C6">Svojstva boja</a></li>
+      <li><a href="#C7">Boje i prozirnost tijela</a></li>
+      <li><a href="#C8">Zanimljivosti</a></li>
+    </ul>
+    <hr>
+    <p>Izvor</p>
+    <a href="https://hr.wikipedia.org/wiki/Boja" target="_blank">Wikipedia</a>
+    <hr>
   </div>
+  <span class="spanright">
+    <div class="mainright">
+        <h2 id="C1">Boja</h2>
+        <hr>
+        <p>Boja (<span><i>tur. boya</i></span>) je vidni osjet ovisan o <span>frekvenciji svjetlosnog zračenja</span>. Ljudsko oko zapaža samo <span>vidljivo zračenje</span>, to jest <span>elektromagnetske valove valne duljine</span> od približno 380 do 760 nanometara. Zračenja svake pojedine valne duljine, podražujući na različit način prijamne mehanizme oka (receptore, čunjiće u mrežnici oka) daju dojam određene boje. Osjet <span>ljubičaste</span> boje izazvan je zračenjem s duljinom vala od 390 do 450 nm, modre (<span>plave</span>) boje zračenjem od približno 450 do 500 nm, <span>zelene</span> od 500 do 570 nm, <span>žute</span> od 570 do 600 nm, <span>narančaste</span> od 600 do 620 nm i <span>crvene</span> od 620 do 760 nm. Prijelazi su između boja postupni i normalno ljudsko oko može u cijelome vidljivom <span>spektru</span> razlikovati oko 160 različitih nijansa boja.</p>
+        <p>Osjet boje obično ne nastaje samo od zračenja jedne frekvencije (to jest od <span>monokromatične svjetlosti</span>), nego redovito od smjesa zračenja užih ili širih područja spektra. Prirodna <span>bijela svjetlost</span> (Sunčeva) polikromatična je, to jest sastavljena je od kontinuiranog niza boja (zračenja između 380 i 760 nm), koje se (s pomoću optičke prizme) mogu rastaviti na boje komponente (Sunčev spektar). </p>
+        <p>Boja nekog tijela može potjecati od svjetlosti koju ono samo emitira (zbog povišene temperature, elektronske pobude), ili pak od svjetlosti koju odbija (<span>reflektira</span>) odnosno propušta. U ovome drugom slučaju tijelo uvijek upija (<span>apsorbira</span>) dio primljene svjetlosti, pa boja tijela koje ne zrači vlastitu svjetlost ovisi o apsorpcijskim svojstvima njegove površine. Bijela je ona površina koja u jednakoj mjeri odbija (reflektira) sva valna područja bijele (na primjer Sunčeve) svjetlosti. Crna površina potpuno upija takvu svjetlost, a siva djelomično, ali u jednakoj mjeri odbija sva područja bijele svjetlosti. Bijelo, crno i sivo nisu prave (kromatske) boje, već takozvane akromatske boje, jer nemaju svoje svojstveno valno područje, već ovise o stupnju osvijetljenosti, odnosno sposobnosti površine da jače ili slabije upija sva valna područja bijele svjetlosti. Tijelo će biti obojeno nekom pravom (<span>kromatskom</span>) bojom ako pokazuje selektivnu apsorpciju, to jest ako mu površina apsorbira bijelu svjetlost samo na određenome valnom području; tada će boja koju ta površina ima (to jest reflektira) biti <span>komplementarna apsorbiranoj boji</span>. Tijelo će na primjer imati crvenu boju ako, obasjano bijelim svjetlom, najjače apsorbira modro-zeleni dio spektra, a najjače reflektira zračenje koje odgovara crvenomu dijelu spektra. </p>
+      </div>
+      <div class="mainright">
+        <h3 id="C2">Objašnjenje</h3>
+        <hr>
+        <p>Boja je osjetilni doživljaj koji nastaje kada svjetlost karakterističnog spektra pobudi receptore u <span>mrežnici oka</span>. Boju također pripisujemo površinama objekata, materijalima, svjetlosnim izvorima, itd. ovisno o njihovim svojstvima apsorpcije, refleksije ili emisije svjetlosnog spektra. </p>
+        <p>U vidnom spektru, odnosno skupu boja, koje ljudsko oko može raspoznati, dolaze redom <span>crvena, narančasta, žuta, zelena, plava, ljubičasta</span>. Zbog toga je i naziv za područje u spektru <span>elektromagnetskih valova</span> učestalosti (frekvencije) ispod one svjetlosnog vala koji odgovara crvenoj boji infracrveno zračenje, a iznad učestalosti vala za ljubičastu boju <span>ultraljubičasto zračenje</span>. Ljudsko ga oko ne zapaža (tada vidimo drugu boju koja je u pozadini), ali ga zapažaju vidni organi nekih životinja, na primjer pčela. Spektar boja se može vidjeti ako snop bijele svjetlosti usmjerimo na optičku prizmu, čime dolazi do njena rasapa (<span>disperzije</span>). Infracrveni val se može opaziti na drugi način: nađe li mu se na putu u rasutom spektru toplomjer, temperatura biva povišena - ljudski ga organizam doživljava kao toplinu. </p>
+        <p>Tradicionalna podjela boja u umjetnosti je na osnovne i složene. Tri osnovne boje su: <span>crvena, žuta i plava</span>. Osnovne su jer se ne mogu dobiti miješanjem drugih boja. One se zovu i primarne boje. Tri složene boje dobivaju se miješanjem osnovnih boja: crvena + žuta = narančasta, plava + žuta = zelena i plava + crvena = ljubičasta. Te boje se nazivaju i <span>sekundarne</span>. Tercijarne boje dobivaju se miješanjem primarnih i sekundarnih (na primjer plavozelena, žutozelena i druge). </p>
+        <p>Druga podjela boja je na <span>tople</span> (<span>crvena, žuta, narančasta</span>) i <span>hladne</span> (<span>plava, ljubičasta, zelena</span>). Tako su podijeljene zato što se u prirodi mogu zamijetiti uz određena <span>toplinska stanja</span> (crveno – vatra, plavo – more). U neutralne boje spadaju smeđa, kavena i slično. </p>
+        <p>Komplementarne boje su dvije boje od koje jedne nema ni malo u drugoj boji. One se nalaze na suprotnim stranama Ostwaldovog kruga boja. To su: narančasta i plava (zato što narančasta nastaje miješanjem crvene i žute, tj. u sebi nema nimalo plave boje), ljubičasta i žuta, crvena i zelena. </p>
+        <p><span>Dugine boje</span> obuhvaćaju spektar šest boja (primarne i sekundarne) koje možemo vidjeti propuštanjem zrake svjetlosti kroz trostranu kristalnu prizmu. </p>
+        <p>Znanost koja se bavi proučavanjem boja zove se <span>optika</span>. </p>
+        <p>U drugim djelatnostima sustavi boja se se određuju na temelju praktičnih i tehnoloških razloga. Kod aditivnog miješanja boja koje se koristi u televiziji i računarstvu najveći raspon prikaza boja dobiva se kada su primarne boje crvena, zelena i plava. Kod suptraktivnog miješanja boja koje se koristi u fotografiji i tiskarstvu primarne su boje cijan, magenta i žuta, pri čemu se u tiskarstvu radi postizanja većeg kontrasta dodaje još i pigment crne boje. </p>
 
-  <div class="mainright">
-  </div>
+        <h4 id="C3">Simbolicko znacenje boja</h4>
 
+        <p>Boje oduvijek imaju i veliku <span>simboličku vrijednost</span>. Na primjer <span>zlatna boja</span> (osobito u kršćanskom slikarstvu) predstavlja isijavanje duha i svetost, dok je ljubičasta (purpurna ili porfirna) vladarska boja jer su rimski carevi koji su naslijedili titulu dobivali dodatak <span>"Porfirogent"</span> (rođen u porfiru) zbog rijetkog ljubičastog kamena – porfira kojeg su carevi dovozili iz dalekog Egipta. </p>
+        <img src="../Images/prostorije.jpg" alt="dijagram osjetljivosti oka">
+        <p><span>Simbolička vrijednost boje</span> mijenja se ovisno u kakvom se okružju koristi. Crveno je, primjerice, boja ljubavi, no u političkom životu ona označava komunizam. Zelena je boja nade, ali ujedno i Islama, i pokreta za zaštitu prirode – zelenih. U europskom kulturnom krugu crno je boja žalosti i pokore, međutim na dalekom istoku, npr. u Indiji, to je bijela boja. Ostale boje su isto tako simbolične: žuta je boja židovstva, ali i Vatikana; crna je boja fašizma i terora uopće; ružičasta označuje optimizam, ljubičasta ljubomoru, itd. </p>
+        <p>U novom vijeku boje su najvažnija sastavnica državnih zastava. Bojom su označeni i sportski klubovi (Dinamo – plavi, Hajduk – bijeli). Boja je često odrednica nekog grada (u Zagrebu plavi uspinjača, tramvaji..., a u Londonu crveni autobusi i trgovi...). Boje su i sastavni dijelovi zaštitnih znakova pojedinih proizvoda (crvena podloga za bijela slova – Coca-Cola, ljubičasta Milka, itd.). </p>
+        <ul>
+          <li><span>Crvena</span> - ljubav, strast, radost, tamno crvena - vrag, revolucionarna boja svih zastava.</li>
+          <li><span>Plava</span> - aristokracija, istina, vjernost, plemenitost.</li>
+          <li><span>Zelena</span> - mir (maslinova grana, lovorov vijenac), nada, besmrtnost (evergreen).</li>
+          <li><span>Žuta</span> - um, pamet, svjetlo, razum.</li>
+          <li><span>Ljubičasta</span> - čarobnjaštvo, pokora, strpljenje, umjetnost.</li>
+          <li><span>Narančasta</span> - plodnost, sjaj, bogatstvo.</li>
+          <li><span>Ružičasta</span> - slatkoća, sramežljivost, nježnost, djevojaštvo.</li>
+          <li><span>Grimizna</span> - čast, kraljevstvo, kardinalska boja, dostojanstvo, bogatstvo, uzvišenost.</li>
+          <li><span>Bijela</span> - čistoća, mir.</li>
+          <li><span>Crna</span> - tuga, bolest, smrt, nesreća, teror.</li>
+        </ul>
 
+        <h4 id="C4">Psihološko djelovanje boja</h4>
+
+        <p>Svaka boja ima određeno psihološko djelovanje, to jest izazivaju kod nas razne osjećaje. Evo primjera nekih boja i njihovih djelovanja: </p>
+        <ul>
+          <li><span>Crvena</span> - snažno, razdražujuće djelovanje, popravlja raspoloženje, ubrzava puls, disanje i mišićnu napetost.</li>
+          <li><span>Žuta</span> - djeluje poticajno, izaziva radost i veselje,i predstavlja nadu. Velike je vidljivosti i upotrebljava se u prometu.</li>
+          <li><span>Narančasta</span> - djeluje svečano, veselo, izaziva osjećaj zdravlja, životne radosti.</li>
+          <li><span>Zelena</span> - odmara, djeluje blago, stvara unutrašnji mir, odmara vid.</li>
+          <li><span>Plava</span> - djeluje smirujuće, suprotno od crvene, pasivno, hladno, potiče koncentraciju i umiruje.</li>
+          <li><span>Ljubičasta</span> - djeluje mistično, tajanstveno, očaravajuće i prigušuje strasti.</li>
+          <li><span>Bijela</span> - umara.</li>
+        </ul>
+
+        <h4 id="C5">Prostorno djelovanje boja</h4>
+        <p>U ljudskom oku tople boje se čine bližima, a hladne daljima, iako se nalaze na istoj udaljenosti od oka. Prostorne vrijednosti su ponajbolje iskoristili slikari u umjetnosti (takozvana koloristička perspektiva), posebice fovisti. </p>
+      </div>
+      <div class="mainright">
+        <h3 id="C6">Svojstva boja</h3>
+        <hr>
+        <p>Osnovne su svojstva (karakteristike) svake boje njezin <span>ton</span> (ovisi o frekvenciji emitiranog odnosno reflektiranog zračenja), svjetljivost (ovisi o jakosti ili intenzitetu zračenja) i zasićenost (ovisi o čistoći boje, to jest o dodatku crne ili bijele primjese). </p>
+        <p><span>Miješanjem pojedinih boja spektra</span> dobivaju se <span>različiti tonovi</span>, to jest nove, druge boje. Miješanjem dviju boja kojima položaj u spektru nije udaljen nastaje boja koja leži između njih (na primjer narančasta boja miješanjem crvene i žute). Kao rezultat miješanja nekih boja udaljenih u spektru (komplementarnih, na primjer ljubičaste i žute) nastaje bijela boja. Ako se čiste, <span>kromatske boje</span>, miješaju s <span>bijelom</span>, dobivaju se <span>jasne, svijetle boje</span>; ako se miješaju s <span>crnom</span>, nastaju <span>tamne, zagasite boje</span>. </p>
+        <p>Izrađeni su različiti sustavi za klasifikaciju pojedinih nijansa boja (Ostwaldova skala, Munsellova specifikacija boja), koji se primjenjuju u prirodnim znanostima, za dekoracije i drugo. Prema teoriji Th. Younga i H. Helmholtza, ljudsko oko ima tri odvojena receptora osjetljiva za tri osnovne boje (crveno, zeleno i plavo), a osjet boje nastaje superpozicijom tih triju osnovnih osjeta; prema tome, normalno je oko polikromatično. Dikromatično oko osjetljivo je za dvije boje, a monokromatično za jednu boju (sljepoća za boje je daltonizam). </p>
+        <img src="../Images/dijagram.png" alt="dijagram osjetljivosti oka">
+        <p>Pojedine boje imaju različito <span>psihofiziološko djelovanje</span>, pa se dijele na tople (crvena, narančasta, žuta) i hladne (plava, ljubičasta). Plavi ambijent smiruje, a crveni stimulira i uzbuđuje. Goethe je podijelio boje na pozitivne i negativne; ljubičastu boju povezivao je s veseljem, crvenu s moći, modru s mirom i hladnoćom, zelenu s privlačenjem, tamnožutu sa smiješnim, svijetložutu s plemenitim. Dvije ili više boja zajedno mogu izazvati osjećaj harmonije. Odabiranje i kombiniranje skladnih boja važno je kako u likovnoj umjetnosti, tako i u industrijskom oblikovanju, dekoraciji prostorija, izradbi odjeće i mnogih proizvoda namijenjenih širokoj potrošnji. </p>
+
+        <h4 id="C7">Boje i prozirnost tijela</h4>
+
+        <p>Kada zrake svjetlosti svih boja padnu na površinu tijela, one se <span>djelomično odbijaju</span>, a <span>djelomično prodiru</span> u tijelo. Ako površina odbija sve zrake bijele svjetlosti koje na nju padaju u istom iznosu, takva se površina naziva <span>savršeno bijelom površinom</span>. Površina koja sve zrake koje na nju padaju apsorbira, a ništa ne reflektira, zove se savršeno crna površina. Ako površina odbija samo jedan dio zraka bijele svjetlosti koje na nju padaju, a drugi propušta u tijelo, onda površina izgleda obojena. Njena boja odgovara smjesi onih obojenih zraka koje površina odbija. Takva je na primjer <span>boja cvijeća, tkanina i raznih drugih neprozirnih tijela</span>. </p>
+        <p>Ako tijelo propušta sve zrake koje na njega padaju, zove se <span>prozirno tijelo</span>. Poptpuno prozirnih tijela nema. Postoji samo prozirnost za zrake određene valne duljine. Jedno te isto fizikalno tijelo može biti prozirno za jedne zrake, a neprozirno za druge. Pokusi pokazuju da je voda, led i staklo prozirno za vidljive, a skoro neprozirno za sve nevidljive zrake. Kamena sol, ugljikov disulfid i ozon prozirni su za vidljive i infracrvene zrake, a neprozirni za ultraljubičaste zrake. Kvarc je proziran za ultraljubičaste zrake.</p>
+      </div>
+      <div class="mainright">
+        <h3 id="C8">Zanimljivosti</h3>
+        <hr>
+        <p>Stari hrvatski izrazi za boju, u smislu vidnog osjetilnog doživljaja, su krasa, mast i cvijet (Klaić: Rječnik stranih riječi). Krasu prepoznajemo u izrazu krasno, krasan, a mast je ostao, primjerice u crnomanjast i u izrazu premazan svim mastima. </p>
+        <p>Jedan cijeli pravac u slikarstvu se posvetio fizičkim svojstvima boje, bio je to divizionizam (pointilizam). Prvi umjetnik ovog pravca koji je iznikao iz impresionizma bio je Georges Seurat, on je slikao tako što je koristio sitne točke duginih boja, crne, bijele i sive, koje je stavljao jedne do drugih, a miješale su se tek u promatračevom oku. </p>
+      </div>
+  </span>
 </div>
-
-
-
-
 
 </body>
 
+
 <footer>
-      <i class="fa fa-facebook fa-2x"></i>
-      <i class="fa fa-twitter fa-2x"></i>
-      <i class="fa fa-instagram fa-2x"></i>
+  <p>Franko Žarković 3.RT</p>
+  <hr>
+  <i class="fa fa-facebook fa-2x"></i>
+  <i class="fa fa-twitter fa-2x"></i>
+  <i class="fa fa-instagram fa-2x"></i>
+
 </footer>
+
+<script src="../JS/script.js"></script>
+
 </html>

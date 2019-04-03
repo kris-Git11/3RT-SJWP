@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="hr">
+
+
+<head>
+  <meta charset="utf-8">
+  <title>Boja</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div class="barbar">
+    <div class="navbar">
+      <h2 class="left"><a href="index.html">BOJA</a></h2>
+      <h2 class="left"><a href="#">LISTA BOJA</a></h2>
+      <h2 class="right"><a href="login.html">PRIJAVI SE</a></h2>
+      <a href="#" onclick="darkMode()" class="fa fa-adjust fa-2x right"></a>
+      <div class="dropdown">
+        <i class="dropbtn fa fa-paint-brush fa-2x" aria-hidden="true"></i>
+        <div class="dropdown-content">
+          <a href="#" class="blue" onclick="setBlue()"></a>
+          <a href="#" class="green" onclick="setGreen()"></a>
+          <a href="#" class="yellow" onclick="setYellow()"></a>
+          <a href="#" class="orange" onclick="setOrange()"></a>
+          <a href="#" class="red" onclick="setRed()"></a>
+          <a href="#" class="pink" onclick="setPink()"></a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+
+
+  <div class="maincenter">
+    <form>
+  <p>Email:
+  <input type="text" name="email" value=""></p>
+  <p>Lozinka:
+  <input type="password" name="pass" value=""></p>
+  <br>
+  <input type="submit" value="Registriraj se">
+</form>
+  <p>Nemate račun?</p><a href="register.html">Registrirajte se!</a>
+  </div>
+
+</body>
+
+
+
+<footer class="login_footer">
+  <p>Franko Žarković 3.RT</p>
+  <hr>
+  <i class="fa fa-facebook fa-2x"></i>
+  <i class="fa fa-twitter fa-2x"></i>
+  <i class="fa fa-instagram fa-2x"></i>
+
+</footer>
+
+<script src="../JS/script.js"></script>
+</html>

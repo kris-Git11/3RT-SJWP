@@ -5,64 +5,80 @@ font-family: "Big Noodle Titling";
 src: url("../Fonts/big_noodle_titling_oblique.ttf");
 }
 
+:root{
+  --color: crimson;
+  --background-color: #1A1A1D;
+  --background-color-back: #161618;
+  --background-color-secondary: #1F1F22;
+  --text-color: white;
+  --shadow: rgba(0, 0, 0, 0.5);
+}
 
 
 html {
   height:100%;
-  background: #1A1A1D;
+  background-color: var(--background-color);
+  -moz-transition: background-color 0.3s ease-in-out;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 body{
   margin: 0;
   padding: 0;
   text-align: center;
+
 }
 
 hr{
-  color: orange;
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Big Noodle Titling';
-  font-size: 32px;
-  color:orange;
+  font-size: 28px;
+  color:var(--color);
+  -moz-transition: color 0.3s ease-in-out;
 }
 
-p {
+p, ul {
   font-family: 'Roboto';
-  color: white;
+  color: var(--text-color);
+  line-height: 1.6;
+  -moz-transition: color 0.3s ease-in-out;
 }
 
 a {
   text-decoration: none;
-  color: orange;
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
 }
 
-.main {
-  margin-bottom: 10%;
-}
-
-
-
-.maindiv{
-  text-align: center;
-  display:block;
-
-}
 
 .navbar {
-  color:#111;
-  height:auto;
-  width:100%;
-  overflow: hidden;
+}
+
+.navbar > i {
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
 }
 
 .barbar {
-  position: sticky;
+  z-index: 1000;
+  position: fixed;
+  background-color:var(--background-color-back);
+  -moz-transition: background-color 0.3s ease-in-out;
+  width:100%;
+  box-shadow: 0 15px 15px var(--shadow);
 }
 
 .barbar hr {
   margin: 0;
+  margin-top: 6vh;
 }
 
 .navbar .left {
@@ -76,44 +92,316 @@ a {
   margin-right: 30px;
 }
 
- i {
-  margin: 20px;
-  color: darkorange;
+
+
+
+
+
+
+.main {
+  margin-bottom: 10%;
 }
 
-
-
-
-
-
-
-
+.maindiv{
+  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+}
 
 .mainleft{
+  z-index: 1100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  position: fixed;
   float:left;
-  border: orange 2px solid;
+  border: var(--color) 2px solid;
+  -moz-transition: border-color 0.3s ease-in-out;
   border-radius:  1em;
+  background-color: var(--background-color-back);
+  -moz-transition: background-color 0.3s ease-in-out;
   width: 25%;
   margin-left: 5%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin-right: 5%;
+  margin-top: 8vh;
   text-align: center;
+  height: 80vh;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.mainleft > img {
+  width: 70%;
+  margin-top: 10%;
+}
+
+.mainleft > p {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
+}
+
+.mainleft > a {
+  font-family: 'Roboto';
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
+}
+
+.mainleft > hr {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mainleft > .raspon {
+  margin-left: -35px;
+  list-style-type: none;
+}
+.mainleft > .content {
+  margin-left: -35px;
+}
+
+.mainleft::-webkit-scrollbar {
+    display: none;
+}
+
+.spanright{
+  width: 60%;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 8vh;
+
 }
 
 .mainright{
+  box-shadow: 0 0 20px var(--shadow);
   float: right;
-  border: orange 2px solid;
+  border: var(--color) 2px solid;
+  -moz-transition: border 0.3s ease-in-out;
   border-radius: 1em;
-  width: 60%;
-  margin-right: 5%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  padding-left: 10px;
+  background-color: var(--background-color-back);
+  -moz-transition: background-color 0.3s ease-in-out;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1.5vh;
   text-align: left;
 }
 
+.mainright > h2 {
+  text-align: center;
+  font-size: 56px;
+  margin: 0;
+}
+
+.mainright > h3 {
+  text-align: left;
+  margin-left: 50px;
+  font-size: 32px;
+  margin-top: 18px;
+
+}
+
+.mainright > h4 {
+  font-size: 28px;
+  margin-top: 36px;
+  margin-left: 25px;
+}
+
+.mainright > p {
+  margin-top: 10px;
+}
+
+.mainright > h3::first-letter {
+  font-size: 52px;
+}
+
+.mainright > h4::first-letter {
+  font-size: 36px;
+}
+
+.mainright > p > span {
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
+}
+
+.mainright > ul > li > span {
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
+}
+
+.mainright > img {
+  border-radius: 0.5em;
+  width: 100%;
+  height: auto;
+}
+
+footer > i {
+ margin: 20px;
+ margin-top: 5px;
+ margin-bottom: 10px;
+ color: var(--color);
+ -moz-transition: color 0.3s ease-in-out;
+}
+
+footer > p {
+  color: var(--color);
+  -moz-transition: color 0.3s ease-in-out;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+footer > hr {
+  width: 30vh;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 footer {
-  height: 100px;
-  background-color: #1F1F22;
+  width: 100%;
+  height: auto;
+  background-color: var(--background-color-secondary);
+  -moz-transition: background-color 0.3s ease-in-out;
   bottom: 0;
+}
+
+
+
+.maincenter{
+  position: absolute;
+  text-align: center;
+  box-shadow: 0 0 20px var(--shadow);
+  border: var(--color) 2px solid;
+  -moz-transition: border 0.3s ease-in-out;
+  border-radius: 1em;
+  background-color: var(--background-color-back);
+  -moz-transition: background-color 0.3s ease-in-out;
+  height: auto;
+  padding: 20px;
+  margin-top: 8vh;
+  right: 25%;
+  left: 25%;
+  min-height: 30ch;
+}
+
+.maincenter > a {
+  font-family: 'Big Noodle Titling';
+  font-size: 24px;
+  color:var(--color);
+  -moz-transition: color 0.3s ease-in-out;
+}
+
+input, select {
+  width: 100%;
+  padding: 6px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid var(--color);
+  -moz-transition: border 0.3s ease-in-out;
+  border-radius: 1em;
+  box-sizing: border-box;
+  background-color: var(--background-color-back);
+  -moz-transition: background-color 0.3s ease-in-out;
+  color: var(--text-color);
+  -moz-transition: color 0.3s ease-in-out;
+  text-align: center;
+  font-size: 18px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: var(--color);
+  -moz-transition: background-color 0.3s ease-in-out;
+  color: var(--text-color);
+  -moz-transition: color 0.3s ease-in-out;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login_footer {
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+.dropbtn {
+  color:var(--color);
+  -moz-transition: color 0.3s ease-in-out;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  float: right;
+  margin: 10px;
+  margin-top: 11px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--background-color);
+  -moz-transition: background-color 0.3s ease-in-out;
+  min-width: 25px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: var(--text-color);
+  -moz-transition: color 0.3s ease-in-out;
+  font-family: 'Roboto';
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.blue{
+  background-color: aqua;
+}
+
+.red{
+  background-color: crimson;
+}
+
+.green{
+  background-color: limegreen;
+}
+
+.yellow{
+  background-color: yellow;
+}
+
+.orange{
+  background-color: darkorange;
+}
+
+.pink{
+  background-color: hotpink;
+}
+
+.
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: var(--background-color-back);
+  -moz-transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+
 }
