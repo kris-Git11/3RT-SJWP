@@ -1,7 +1,8 @@
 let root = document.documentElement;
 
+
 function setBlue() {
-  root.style.setProperty("--color","aqua");
+  root.style.setProperty("--color","dodgerblue");
 };
 
 function setGreen() {
@@ -33,7 +34,7 @@ function darkMode() {
     root.style.setProperty("--background-color-back","#eee");
     root.style.setProperty("--background-color-secondary","#eee");
     root.style.setProperty("--text-color","black");
-    root.style.setProperty("--shadow","rgba(0, 0, 0, 0.2)");
+    root.style.setProperty("--shadow","rgba(0, 0, 0, 0.1)");
   }else{
     dark = true;
     root.style.setProperty("--background-color","#1A1A1D");
