@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" href="css/style_login_register.css">
+  <title>Bodybuilding: proizvodi i sve o bodybuildingu</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Idi na vrh"><img src="img/arrow_up.png" alt="arrow" style="float:right;width:24px;height:24px;"></button>
+    <script>
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+          } else {
+            document.getElementById("myBtn").style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
+  <div class="hero-image1">
+<div class="header">
+  <h1>BODYBUILDING</h1>
+  <p>PROIZVODI I SVE O BODYBUILDINGU</p>
+</div>
+</div>
+<div class="topnav">
+  <a href="home_page.html">Početna</a>
+  <a href="about.html">O bodybuildingu</a>
+  <a href="rast_misica.html">Rast mišića</a>
+  <a href="kalorijska_tablica.html">Kalorijska tablica</a>
+  <a class="active" href="login.html" style="float:right">PRIJAVA</a>
+  <a href="register.html" style="float:right">REGISTRACIJA</a>
+</div>
+
+<div class="row">
+
+</div>
+
+<div class="container">
+    <form>
+    <div class="row1">
+            <div class="col-25">
+              <label for="email">E-mail</label>
+            </div>
+            <div class="col-75">
+              <input type="email" id="email" name="email" placeholder="Upiši e-mail...">
+            </div>
+          </div>
+    <div class="row1">
+        <div class="col-25">
+            <label for="lozinka">Lozinka</label>
+        </div>
+        <div class="col-75">
+            <input type="password" id="loz" name="lozinka" placeholder="Upiši lozinku...">
+        </div>
+     </div>
+    
+    <div class="row1">
+            <input onclick="alert('Uspješna prijava!')" type="submit" value="Prijava">
+        </div>
+        <p style="text-align: right;font-size: 70%">Niste registrirani? <a href="register.html">Registriraj se</a></p>
+    </form>
+  </div>
+
+<div class="be_footer">
+<div class="footer">
+  <div class="row">
+    <div class="column">
+      <h2>KONTAKT:</h2>  
+      <div>
+            e-mail:
+            <a href="mailto:dsdadods@gmail.com">dsdadods@gmail.com</a>
+      </div>
+    </div>
+    <div class="column1">
+        <h2>ZAPRATITE ME NA:</h2>  
+        <a href="https://www.instagram.com/david_stirinic/">
+          <img src="img/ig_logo.png" alt="Instagram" style="width:42px;height:42px;border:0">
+        </a>    
+        <a href="https://www.facebook.com/budala40/">
+          <img src="img/fb_logo1.png" alt="Facebook" style="width:42px;height:42px;border:0">
+        </a> 
+    </div>
+  </div>
+  <p>© David Štirinić</p>
+</div>
+</div>
+</body>
+</html>

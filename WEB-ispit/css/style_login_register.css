@@ -1,0 +1,286 @@
+* {
+    box-sizing: border-box;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #dfdfdf;
+  }
+  .header {
+    padding: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .hero-image1 {
+    background: url(../img/header.jpg) no-repeat center; 
+    background-size: cover;
+    height: 300px;
+    position: relative;
+  }
+  .header h1 {
+    font-size: 70px;
+    }
+    .header p {
+    font-size: 20px;
+    }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #000B29;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    opacity: 0.9;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .topnav a:hover {
+    background-color: #D70026;
+    color: white;
+  }
+  div a.active {
+    background-color: #EDB83D;
+    color: white;
+  }  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    margin-top: 10px;
+    color: #ffffff;
+  }
+  .column1 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    color: #ffffff;
+  }
+  .column a{
+    text-decoration: none;
+    color:#EDB83D;
+  }
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .card1 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    float: left;
+    width: 22%;
+    text-align: center;
+  }
+  .card1-2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    float: left;
+    width: 22%;
+    text-align: center;
+  }
+  .card_empty{
+    padding: 20px;
+    margin-top: 20px;
+    float: left;
+    width: 4%;
+  }
+  .card1:hover {
+    box-shadow:5px 5px 15px 7px #888888;
+  }
+  .card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .card2 a{
+    text-decoration: none;
+    color:#000000;
+  }
+  .card1 p {
+    text-align: center;
+    font-size: 90%;
+    font-weight: bold;
+  }
+  .card1-2 p {
+    text-align: center;
+    font-size: 90%;
+    font-weight: bold;
+  }
+  .card1 a {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+  }
+  .be_footer {
+    background: url(../img/footer.jpg) no-repeat center; 
+    background-size: cover;
+    height: 200px;
+    position: relative;
+  }
+  .footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .footer p {
+    color:white;
+  }
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: 4px solid black;
+    outline: black;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    border-color: #000000;
+  }
+
+  #myBtn:hover {
+    background-color: #555;
+  }
+      red::after {
+        @extend %i;
+        @extend %i-percent;
+        content:'';
+        margin: 0;
+        position: absolute;
+        top: 6px;
+        right: 8px;
+        left: auto;
+      }
+
+
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      outline: none;
+    }
+    input[type=text]:focus {
+      border: 2px solid #555;
+    }
+    input[type=email], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      outline: none;
+    }
+    input[type=password]:focus {
+      border: 2px solid #555;
+    }
+    input[type=password], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+      -webkit-transition: 0.2s;
+      transition: 0.2s;
+      outline: none;
+    }
+    input[type=email]:focus {
+      border: 2px solid #555;
+    }
+    
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color: #EDB83D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+      margin-left: 40%;
+      margin-right: 40%;
+      margin-top: 10px;
+    }
+    
+    input[type=submit]:hover {
+      background-color: #D70026;
+    }
+    
+    .container {
+      border: 1px solid grey;
+      margin-top: 15px;
+      margin-left: 30%;
+      margin-right: 30%;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    .row1::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    @media screen and (max-width: 800px) {
+      .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
