@@ -96,7 +96,7 @@ a:hover
     border: 1px solid #ddd;
     border-radius: 15px;
     padding: 5px;
-    width: 40%;
+    width: 30%;
     margin-left: 10px;
     margin-right: 10px;
   }
@@ -108,7 +108,7 @@ a:hover
   img.xdddd {
     border: 1px solid #ddd;
     padding: 5px;
-    width: 35%;
+    width: 30%;
     margin-left: 10px;
     margin-right: 10px;
 	float: right;
@@ -116,7 +116,7 @@ a:hover
   img.xdddd {
     border: 1px solid #ddd;
     padding: 5px;
-    width: 35%;
+    width: 30%;
     margin-left: 10px;
     margin-right: 10px;
   float: right;
@@ -316,7 +316,7 @@ ul#menu li.peta.selected a
   overflow: hidden;
   margin: 0 auto 0 auto;
   padding: 10px 20px 20px 20px;
-  background: #F6F6F0 url(back.png) repeat-y;
+  background: #FFFFFF url(back.png) repeat-y;
   border: 15px solid #FFF;}
 
 .sidebar
