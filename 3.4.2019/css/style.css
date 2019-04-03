@@ -1,0 +1,42 @@
+<style>  <meta charset="utf-8">
+
+
+  table, tr, th {
+    border: 1px solid white;
+    background-color:#dbdcdd;
+    font-family: 'Roboto', sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+  }
+
+  table {
+  width: 80%;
+  border: 1px solid black;
+  font-family: Georgia, serif;
+}
+
+th {
+  height: 15px;
+  color: #478eff;
+  border: 1px solid black;
+  font-family: Georgia, serif;
+}
+
+tr {
+  height: 15px;
+  color: #478eff;
+  border: 1px solid black;
+  font-family: Georgia, serif;
+}
+
+
+p1 {
+  font-family: Georgia, serif;
+  color:#478eff;
+}
+
+h3 {
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  text-decoration: underline;
+}
+
+</style>
