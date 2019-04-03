@@ -1,0 +1,53 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #002233;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #00227d;
+}
+
+h1 {
+  font-size: 58px;
+  text-align: center;
+  color:  #FFC300;
+}
+
+h2{
+  font-size: 30px;
+  color:  #FFC300;
+}
+p{
+  font-size: 20px;
+  color:  #002233;
+}
+
+div{
+  color:  #FFC300;
+  font-size: 20px;
+  text-align: center;
+  background-color: #002233;
+  opacity: 0.9;
+
+}
+
+body{
+  background: url(../img/pocetna.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
