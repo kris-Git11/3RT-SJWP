@@ -137,7 +137,7 @@ ul.topnav li.right {float: right;}
 .column img{
   padding: 10px;
   position: relative;
-  width: 50%;
+  width: 40%;
   height:auto;
   align-items: center;
   text-align: center;
@@ -365,13 +365,14 @@ img.bg {
 /*-----------------------------------------------------------------------------------------SlideShow----------------------------------------------------*/
 
 .slideshow-container {
-  max-width: 900px;
-  max-height: 800px;
+  max-width: 600px;
+  max-height: 500px;
   position: relative;
-  margin: auto;
+  margin:auto;
   border-radius: 15px;
   justify-content: center;
   background-position: center;
+
 }
 
 .prev, .next {
@@ -469,9 +470,9 @@ img.bg {
 
 @media screen and (max-width: 800px) {
   .slideshow-container{
-    margin-left: 3%;
-    margin-right: 3%;
-    width: 94%;
+    margin-left: 11%;
+    margin-right: 11%;
+    width: 78%;
   }
 }
 
