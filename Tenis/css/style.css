@@ -1,0 +1,437 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #ddd;
+}
+
+.header {
+  width: 100%;
+  height: 300px;
+  /*background-color: dodgerblue;*/
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: 80%;
+  padding: 50px;
+  color: white;
+  text-align: center;
+  font-size: 40px;
+}
+
+/*///////////////////////////////////////*/
+
+.navbar {
+  position: -webkit -sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar li {
+  float: left;
+  font-size: 20px;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: dodgerblue;
+}
+
+/*///////////////////////////////////////*/
+
+.content {
+  margin: auto;
+  width: 90%;
+  background-color: #ddd;
+  padding: 10px;
+
+}
+
+.content a:link {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+.content a:visited {
+  color: green;
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+.content a:active {
+  color: dodgerblue;
+}
+
+#razmak {
+  line-height: 1.5;
+}
+
+/*///////////////////////////////////////*/
+
+.footer {
+  margin-top: 0;
+  background-color: #aaa;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+}
+
+.footer a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: dodgerblue;
+  text-decoration: underline;
+}
+
+.footer a:active {
+  color: dodgerblue;
+}
+
+
+/*///////////////////////////////////////*/
+
+label {
+  padding: 10px;
+  font-size: 16px;
+  float: left;
+  width: 10%;
+}
+
+input, select, textarea {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  border: 2px solid #aaa;
+  width: 25%;
+}
+
+#textbox, #gumb {
+  width: 50%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 2px solid dodgerblue;
+}
+
+#gumb:focus {
+  border: 2px solid transparent;
+}
+
+#gumb:hover {
+  background-color: dodgerblue;
+  border: 2px solid dodgerblue;
+  color: white;
+}
+/*
+input:hover, select:hover {
+  background-color: #9bd4f5;
+}*/
+
+.unos {
+  margin-top: 20px;
+}
+
+.space {
+  width: 100%;
+}
+
+#raz {
+  width: 15%;
+}
+
+/*///////////////////////////////////////*/
+
+
+.image {
+  margin: 10px;
+  padding: 0;
+  border: 1px solid #333;
+  float: left;
+  text-align: center;
+}
+
+.image img {
+  width: 100%;
+}
+ .image p {
+   margin: 0;
+   padding: 3px;
+   line-height: 1;
+}
+
+.slam {
+  margin-left: 10px;
+}
+
+.slam a {
+  line-height: 1.5;
+}
+
+/*///////////////////////////////////////*/
+
+.top {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.top td, .top th {
+  border: 1px solid #aaa;
+  padding: 8px;
+  text-align: center;
+}
+
+.top tr:nth-child(even){background-color: #f2f2f2;}
+
+.top tr:hover {background-color: #aaa;}
+
+.top th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+}
+
+/*///////////////////////////////////////*/
+
+.accordion {
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.accordion:after {
+  content: '+';
+  font-size: 20px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active2, .accordion:hover {
+  background-color: #666;
+}
+
+.active2:after {
+  content: '-';
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  line-height: 2;
+}
+
+/*///////////////////////////////////////*/
+
+.slamIMG {
+  display: inline;
+  padding: 5px;
+}
+
+/*///////////////////////////////////////*/
+
+#gumb0, #gumb1 {
+  border: none;
+  font-size: 20px;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+#gumb0:hover, #gumb1:hover {
+  color: dodgerblue;
+  border-bottom: 2px solid dodgerblue;
+}
+
+.activeGumb {
+  color: dodgerblue;
+  border-bottom: 2px solid dodgerblue;
+}
+
+.gumbi {
+  display: none;
+}
+
+/*///////////////////////////////////////*/
+
+.prikaz {
+  position: relative;
+  margin-top: 20px;
+  border: 1px solid #aaa;
+  height: 555px;
+  width: 665px;
+  left: 265px;
+}
+
+
+#drz {
+  float: left;
+  width: 150px;
+  margin-top: 60px;
+  margin-left: 10px;
+}
+
+ #igr {
+  position: absolute;
+  left: 300px;
+  clip: rect(0px,362px,540px,0px);
+  z-index: 0;
+}
+
+.prikaz p {
+  color: dodgerblue;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 50px;
+  position: absolute;
+  left: 170px;
+}
+
+.tab {
+  border-collapse: collapse;
+  width: 350px;
+  margin-top: 5px;
+  position: absolute;
+  left: 10px;
+  bottom: 150px;
+}
+
+.tab td {
+  border: 1px solid #aaa;
+  background-color: #ddd;
+  padding: 5px;
+  color: red;
+  text-align: center;
+  font-size: 60px;
+}
+
+.tab h3 {
+  color: #777;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#pos-gumb {
+  position: relative;
+  margin: auto;
+}
+
+.prev{
+  cursor: pointer;
+  position: absolute;
+  top: 228px;
+  left: 204px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border: 1px solid transparent;
+  border-radius: 10px 0 0 10px;
+  user-select: none;
+}
+
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 228px;
+  left: 930px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border: 1px solid transparent;
+  border-radius: 0 10px 10px 0;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  color: white;
+  background-color: dodgerblue;
+}
+
+/*///////////////////////////////////////*/
+
+#up {
+  font-size: 60px;
+  float: right;
+  position: -webkit -sticky;
+  position: sticky;
+  right: 5px;
+  bottom: 0;
+  z-index: 1;
+}
+
+#up a:link {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+#up a:visited {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+#up a:hover {
+  color: dodgerblue;
+  text-decoration: none;
+}
+
+#up a:active {
+  color: dodgerblue;
+  text-decoration: none;
+}

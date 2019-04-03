@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css\style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="icon" type="image/gif" href="img/icon.png" sizes="16x16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<title>Tenis</title>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Tenis</h1>
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="#" class="active">Igrači</a></li>
+      <li><a href="turniri.html">Turniri</a></li>
+      <li><a href="pravila.html">Pravila</a></li>
+      <li><a href="komentari.html">Komentari</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+        <p>U tenisu igrači se natječu u turnirima po sustavu ždrijeba i eliminicije. Na turnirima osvajaju bodove po kojima se određuju rang liste najboljih igrača.</p>
+        <h2 id="top-lista">Top 20</h2>
+        <div class="gumbi">
+            <button onclick="promjena(0)" id="gumb0">Tablični prikaz</button>
+            <button onclick="promjena(1)" id="gumb1">Pojedinačni prikaz</button>
+        </div>
+        <!--<input type="submit" id="gumb0" value="Tablični prikaz">
+        <input type="submit" id="gumb1" value="Pojedinačni prikaz">-->
+
+        <div id="pos-gumb">
+            <div class="prikaz">
+                <img src="img/drzave/srb.svg" alt="" id="drz"/>
+                <p>Novak<br>Đoković</p>
+                <img src="img/igraci/djokovic_full_ao19.png" alt="" id="igr"/>
+                <table class="tab">
+                    <tr>
+                        <td rowspan="2"><h3>Poredak</h3>1</td>
+                        <td><h3>Bodovi</h3>10990</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Starost</h3>31</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="prikaz">
+                    <img src="img/drzave/esp.svg" alt="" id="drz"/>
+                    <p>Rafael<br>Nadal</p>
+                    <img src="img/igraci/nadal_full_ao19.png" alt="" id="igr" style="transform: scaleX(-1);"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>2</td>
+                            <td><h3>Bodovi</h3>8725</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>32</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/ger.svg" alt="" id="drz"/>
+                    <p>Alexander<br>Zverev</p>
+                    <img src="img/igraci/zverev_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>3</td>
+                            <td><h3>Bodovi</h3>6630</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>21</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/aut.svg" alt="" id="drz"/>
+                    <p>Dominic<br>Thiem</p>
+                    <img src="img/igraci/thiem_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>4</td>
+                            <td><h3>Bodovi</h3>4755</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>25</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/sui.svg" alt="" id="drz"/>
+                    <p>Roger<br>Federer</p>
+                    <img src="img/igraci/federer_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>5</td>
+                            <td><h3>Bodovi</h3>4600</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>37</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/jpn.svg" alt="" id="drz"/>
+                    <p>Kei<br>Nishikori</p>
+                    <img src="img/igraci/nishikori_full_ao19.png" alt="" id="igr" style="transform: scaleX(-1);"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>6</td>
+                            <td><h3>Bodovi</h3>4235</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>29</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/rsa.svg" alt="" id="drz"/>
+                    <p>Kevin<br>Anderson</p>
+                    <img src="img/igraci/anderson_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>7</td>
+                            <td><h3>Bodovi</h3>4115</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>32</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                        <img src="img/drzave/arg.svg" alt="" id="drz"/>
+                        <p>Juan Martin<br>Del Potro</p>
+                        <img src="img/igraci/delpotro-full_iw14.png" alt="" id="igr"/>
+                        <table class="tab">
+                            <tr>
+                                <td rowspan="2"><h3>Poredak</h3>8</td>
+                                <td><h3>Bodovi</h3>3585</td>
+                            </tr>
+                            <tr>
+                                <td><h3>Starost</h3>30</td>
+                            </tr>
+                        </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/usa.svg" alt="" id="drz"/>
+                    <p>John<br>Isner</p>
+                    <img src="img/igraci/isner_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>9</td>
+                            <td><h3>Bodovi</h3>3485</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>33</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/gre.svg" alt="" id="drz"/>
+                    <p>Stefanos<br>Tsitsipas</p>
+                    <img src="img/igraci/tsitsipas_full_ao18.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>10</td>
+                            <td><h3>Bodovi</h3>3160</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>20</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--////////////////////////////////////////////////////////////////////////////////////-->
+                <div class="prikaz">
+                <img src="img/drzave/cro.svg" alt="" id="drz"/>
+                <p>Marin<br>Čilić</p>
+                <img src="img/igraci/cilic_full_ao19.png" alt="" id="igr" style="transform: scaleX(-1);"/>
+                <table class="tab">
+                    <tr>
+                        <td rowspan="2"><h3>Poredak</h3>11</td>
+                        <td><h3>Bodovi</h3>3095</td>
+                    </tr>
+                    <tr>
+                        <td><h3>Starost</h3>30</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="prikaz">
+                    <img src="img/drzave/rus.svg" alt="" id="drz"/>
+                    <p>Karen<br>Khachanov</p>
+                    <img src="img/igraci/khachanov_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>12</td>
+                            <td><h3>Bodovi</h3>2845</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>22</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/cro.svg" alt="" id="drz"/>
+                    <p>Borna<br>Ćorić</p>
+                    <img src="img/igraci/coric_full_ao19.png" alt="" id="igr" style="transform: scaleX(-1);"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>13</td>
+                            <td><h3>Bodovi</h3>2345</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>22</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/can.svg" alt="" id="drz"/>
+                    <p>Milos<br>Raonic</p>
+                    <img src="img/igraci/raonic_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>14</td>
+                            <td><h3>Bodovi</h3>2275</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>28</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/rus.svg" alt="" id="drz"/>
+                    <p>Daniil<br>Medvedev</p>
+                    <img src="img/igraci/medvedev_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>15</td>
+                            <td><h3>Bodovi</h3>2230</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>23</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/ita.svg" alt="" id="drz"/>
+                    <p>Marco<br>Cecchinato</p>
+                    <img src="img/igraci/cecchinato_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>16</td>
+                            <td><h3>Bodovi</h3>2021</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>26</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/ita.svg" alt="" id="drz"/>
+                    <p>Fabio<br>Fognini</p>
+                    <img src="img/igraci/fognini_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>17</td>
+                            <td><h3>Bodovi</h3>1885</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>31</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                        <img src="img/drzave/fra.svg" alt="" id="drz"/>
+                        <p>Gael<br>Monfils</p>
+                        <img src="img/igraci/monfils_full_ao19.png" alt="" id="igr"/>
+                        <table class="tab">
+                            <tr>
+                                <td rowspan="2"><h3>Poredak</h3>18</td>
+                                <td><h3>Bodovi</h3>1875</td>
+                            </tr>
+                            <tr>
+                                <td><h3>Starost</h3>32</td>
+                            </tr>
+                        </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/geo.svg" alt="" id="drz"/>
+                    <p>Nikoloz<br>Basilashvili</p>
+                    <img src="img/igraci/basilashvili_full_ao19.png" alt="" id="igr" style="transform: scaleX(-1);"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>19</td>
+                            <td><h3>Bodovi</h3>1865</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>27</td>
+                        </tr>
+                    </table>
+                </div>
+            <div class="prikaz">
+                    <img src="img/drzave/bel.svg" alt="" id="drz"/>
+                    <p>David<br>Goffin</p>
+                    <img src="img/igraci/goffin_full_ao19.png" alt="" id="igr"/>
+                    <table class="tab">
+                        <tr>
+                            <td rowspan="2"><h3>Poredak</h3>20</td>
+                            <td><h3>Bodovi</h3>1685</td>
+                        </tr>
+                        <tr>
+                            <td><h3>Starost</h3>28</td>
+                        </tr>
+                    </table>
+                </div>
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <script src="javascript/script.js"></script>
+
+  <div class="footer"><a href="http://martinmarcec.from.hr/">Martin Marčec 3.RT, 2019</a></div>
+
+
+
+</body>
+</html>

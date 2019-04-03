@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css\style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="icon" type="image/gif" href="img/icon.png" sizes="16x16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="UTF-8">
+<title>Tenis</title>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Tenis</h1>
+  </div>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="index.html">Početna</a></li>
+      <li><a href="igraci.html">Igrači</a></li>
+      <li><a href="turniri.html">Turniri</a></li>
+      <li><a href="pravila.html">Pravila</a></li>
+      <li><a href="#" class="active">Komentari</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+      <h2>Podijelite svoje misli</h2>
+      <form action="">
+        <label for="fdate">Komentar</label>
+        <div class="space">
+            <textarea cols="80" rows="10" id="textbox" type="text" name="textbox"></textarea>
+        </div>
+
+        <label for="fname">Ime</label>
+        <div class="space">
+          <input type="text" id="ime" name="fname">
+        </div>
+
+        <label for="fsurname">Prezime</label>
+        <div class="space">
+          <input type="text" id="prezime" name="fsurname">
+        </div>
+
+        <label for="skola">Škola</label>
+        <div class="space">
+          <select id="skole" name="skola">
+            <option value="emp"></option>
+            <option value="tsc">Tehnička škola Čakovec</option>
+            <option value="ets">Ekonomska i Trgovačka škola</option>
+            <option value="js">Gimnazija Josipa Slavenskog</option>
+            <option value="gos">Gospodarska škola Čakovec</option>
+            <option value="goc">Graditeljska škola Čakovec</option>
+            <option value="ssc">Srednja škola Čakovec</option>
+            <option value="ssp">Srednja škola Prelog</option>
+          </select>
+        </div>
+
+        <label for="fsurname">E-pošta</label>
+        <div class="space">
+          <input type="text" id="email" name="fsurname">
+        </div>
+
+        <div class="unos">
+          <label for="fgumb" style="color: #ddd;">Ime</label>
+          <div class="space">
+            <input type="button" id="gumb" value="Objavi komentar" name="fgumb">
+          </div>
+        </div>
+      </form>
+
+    </div>
+
+  <div class="footer"><a href="http://martinmarcec.from.hr/">Martin Marčec 3.RT, 2019</a></div>
+
+
+
+</body>
+</html>
