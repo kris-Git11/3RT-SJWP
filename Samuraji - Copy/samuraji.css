@@ -11,7 +11,7 @@ body {
 /* Header/Blog Title */
 .header {
   padding: 30px;
-  text-align: center;
+  text-align: left;
   background-image: url(Slike/Samurai1.jpg);
   color: white;
   border-radius: 20px;
