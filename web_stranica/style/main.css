@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
+@import url("https://fonts.googleapis.com/css?family=Kalam");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------------------------Quote_and_coverPhoto----------------------------------------*/
+.wrapper header nav {
+  z-index: 1;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bac.jpg) no-repeat 50% 50%; /*------------Cover Image ----------*/
+  background-size: cover;
+}
+
+.head-quote {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  left: 25%;
+  top: 42%;
+  padding: 10px 8px;
+  width: 50%;
+  height: 100px;
+  /* background: red;*/
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.head-quote .quote {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* First two media */
+@media (max-width: 1232px) {
+  .head-quote {
+    height: 150px;
+  }
+}
+
+@media (max-width: 730px) {
+  .head-quote {
+    height: 200px;
+  }
+  .head-quote .qauth {
+    text-align: center;
+  }
+}
+
+/*--------------------------------------Logo_navbar_----------------------------------------*/
+.logo {
+  line-height: 40px;
+  position: fixed;
+  float: left;
+  margin: 16px 46px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo abbr {
+  text-decoration: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 40px;
+}
+
+nav ul {
+  line-height: 40px;
+  list-style: none;
+  background: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  color: #fff;
+  padding: 0;
+  text-align: right;
+  margin: 0;
+  padding-right: 40px;
+  -webkit-transition: .8s;
+  transition: .8s;
+}
+
+nav.black ul {
+  background: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 16px 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.menu-icon {
+  line-height: 60px;
+  width: 100%;
+  background: #000;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .logo {
+    position: fixed;
+    top: 0;
+    margin: 16px 30px;
+  }
+  nav ul {
+    max-height: 0px;
+    background: #000;
+  }
+  nav.black ul {
+    background: #000;
+  }
+  .showing {
+    max-height: 33em;
+  }
+  nav ul li {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px;
+    text-align: center;
+  }
+  .menu-icon {
+    display: block;
+    line-height: 40px;
+  }
+  .menu-icon i {
+    top: 16px;
+  }
+}
+
+/*--------------------------------------planetnav_i_unicontent----------------------------------------*/
+.wrap {
+  width: 100%;
+  overflow: hidden;
+}
+
+.planetnav {
+  position: relative;
+  float: left;
+  width: 12%;
+  height: auto;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+  background: #6b7afc;
+}
+
+.planetnav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.planetnav ul li a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.planetnav ul li a:hover {
+  background: rgb(56, 56, 56);
+}
+
+.unicontent {
+  position: relative;
+  float: left;
+  width: 88%;
+  background: #f1f1f1;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+.unicontent2 {
+  position: relative;
+  float: center;
+  width: 88%;
+  background: #f1f1f1;
+  margin-left: 3em;
+  margin-right: 5em;
+  padding: 30px;
+  padding-bottom: 100%;
+  margin-bottom: -100%;
+}
+
+.unicontent article {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media (max-width: 786px) {
+  .planetnav {
+    width: 100%;
+  }
+  .planetnav ul li {
+    float: left;
+    margin: auto;
+    width: 50%;
+  }
+  .unicontent {
+    width: 100%;
+  }
+  .unicontent2 {
+    width: 100%;
+  }
+}
+
+/*--------------------------------------Footer----------------------------------------*/
+footer {
+  width: 100%;
+  background-color: #cccccc;
+  text-align: center;
+  margin: 0;
+}
+
+footer p {
+  padding: 20px;
+  margin: 0;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=main.css.map */
