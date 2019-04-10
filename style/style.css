@@ -10,8 +10,8 @@ div.crta {
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
-  float: left;
-  width: 40%;
+float:none;
+  width: 35%;
 }
 
 div.gallery:hover {
@@ -26,6 +26,13 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
+}
+
+div.mama{
+  float: right;
+  padding-top: 10%;
+
+  padding-right: 10%;
 }
 
 body
@@ -310,6 +317,7 @@ ul#menu li.peta.selected a
   border-radius: 25px;
   border: 1px solid black;
   border-width: medium;
+
 }
 
 .sidebar ul
