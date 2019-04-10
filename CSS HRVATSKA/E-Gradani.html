@@ -39,9 +39,31 @@
 <br>
 <br>
 
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Idi na vrh</button>
+
 <div class="row">
   <div class="column" style="background-color:#d9d9d9;"><h2>e-Građani</h2>
-  <p class="Pocetak">Sustav e-Građani uspostavljen je s ciljem modernizacije, pojednostavljenja i ubrzanja komunikacije građana i javnog sektora te povećanja transparentnosti pružanja javnih usluga.
+  <p class="Pocetak">Sustav e-Građani uspostavljen je s <span style="background-color: #6BACFF">ciljem modernizacije, pojednostavljenja i ubrzanja komunikacije građana i javnog sektora</span> te povećanja transparentnosti pružanja javnih usluga.
 </p>
 <h2>Sustav e-Građani čine:</h2>
 <ul>
@@ -53,7 +75,7 @@
 <p class="Pocetak">S<a class="sve" href="https://gov.hr/">redišnji državni portal</a>  je jedinstveno mjesto za pristup javnim informacijama. Osnovna svrha središnjeg državnog portala je objedinjavanje informacija državnih institucija kako bi građani na što jednostavniji način došli do traženih informacija.
 </p>
 <h3>Osobni korisnički pretinac</h3>
-<p class="Pocetak">O<a class="sve" href="https://www.fina.hr/osobni-korisnicki-pretinacsobni">sobni korisnički pretinac</a> svakom građaninu, koji ima važeći OIB, omogućava primanje osobnih službenih poruka  vezanih za javne usluge, postupke (odnosno njihov tijek) i osobne statuse te njihov pregled, upravljanje i pohranu. Putem njega građanin će biti informiran o njemu važnim situacijama i događajima vezanim za osobna zakonska prava i obveze te o korištenju osobnih podataka u javnom sektoru.
+<p class="Pocetak">O<a class="sve" href="https://www.fina.hr/osobni-korisnicki-pretinacsobni">sobni korisnički pretinac</a> svakom građaninu, koji ima <span style="background-color: #6BACFF">važeći OIB</span>, omogućava primanje osobnih službenih poruka  vezanih za javne usluge, postupke (odnosno njihov tijek) i osobne statuse te njihov pregled, upravljanje i pohranu. Putem njega građanin će biti informiran o njemu važnim situacijama i događajima vezanim za osobna zakonska prava i obveze te o korištenju osobnih podataka u javnom sektoru.
 </p>
 <h3>Nacionalni identifikacijski i autentifikacijski sustav</h3>
 <p class="Pocetak">Osnovni zadatak <a class="sve" href="https://nias.gov.hr/">NIAS</a>-a je sigurna i pouzdana identifikacija i autentifikacija korisnika koji putem odgovarajuće vjerodajnice pristupaju javnim elektroničkim uslugama. U svom radu, NIAS razmjenjuje samo one podatke koji su nužni za jednoznačnu identifikaciju korisnika.

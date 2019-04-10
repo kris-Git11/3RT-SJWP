@@ -44,9 +44,32 @@
 
 <br>
 <br>
+
+<script>
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Idi na vrh</button>
+
 <div class="row">
   <div class="column" style="background-color:#d9d9d9;"><h2>Politika</h2>
-  <p class="Pocetak">Republika Hrvatska je po svom državnom uređenju <a class="sve" href="https://hr.wikipedia.org/wiki/Parlamentarna_republika">republika</a>, s demokratski izabranim parlamentom - Hrvatskim saborom kao najvišim predstavničkim tijelom građana, i predsjednikom Republike kao državnim poglavarom. Republika Hrvatska proglasila je svoju <a class="interna" href="Povijest.html">samostalnost i nezavisnost</a> na osnovu Ustavne odluke o suverenosti i samostalnosti Republike Hrvatske, koju je Hrvatski sabor donio 25. juna 1991. Ustavnoj odluci o suverenosti i samostalnosti RH prethodio je referendum od 19. maja 1991. godine, na kojeg je izašlo 83,56% birača, a za suverenu i samostalnu Hrvatsku izjasnilo se 94,17 % birača. Međutim, proces razdruživanja od SFRJ je nakratko prekinut zbog tromjesečnog moratorija međunarodne zajednice (7. jula 1991.) Dana 7. oktobra 1991. godine raketirani su Banski dvori, ondašnje sjedište predsjednika Republike. To je bio izravan povod da Hrvatski sabor 8. oktobra donese Odluku o raskidu svih državno-pravnih veza na osnovu kojih je zajedno s ostalim republikama i pokrajinama sačinjavala dosadašnju SFRJ. Tog dana je Hrvatska kao slobodna i samostalna država preuzela punu ustavnu vlast, a parlamenti i vlade svih država pozvani su da prihvate i priznaju taj čin slobodne volje hrvatskog naroda. </p>
+  <p class="Pocetak">Republika Hrvatska je po svom državnom uređenju <a class="sve" href="https://hr.wikipedia.org/wiki/Parlamentarna_republika">republika</a>, s demokratski izabranim parlamentom - Hrvatskim saborom kao najvišim predstavničkim tijelom građana, i predsjednikom Republike kao državnim poglavarom. Republika Hrvatska proglasila je svoju <a class="interna" href="Povijest.html">samostalnost i nezavisnost</a> na osnovu Ustavne odluke o suverenosti i samostalnosti Republike Hrvatske, koju je Hrvatski sabor donio 25. juna 1991. Ustavnoj odluci o suverenosti i samostalnosti RH prethodio je <span style="background-color: #6BACFF">referendum od 19. svibnja 1991. godine, na kojeg je izašlo 83,56% birača</span>, a za suverenu i samostalnu Hrvatsku izjasnilo se 94,17 % birača. Međutim, proces razdruživanja od SFRJ je nakratko prekinut zbog tromjesečnog moratorija međunarodne zajednice (7. jula 1991.) Dana 7. oktobra 1991. godine raketirani su Banski dvori, ondašnje sjedište predsjednika Republike. To je bio izravan povod da Hrvatski sabor 8. oktobra donese Odluku o raskidu svih državno-pravnih veza na osnovu kojih je zajedno s ostalim republikama i pokrajinama sačinjavala dosadašnju SFRJ. Tog dana je Hrvatska kao slobodna i samostalna država preuzela punu ustavnu vlast, a parlamenti i vlade svih država pozvani su da prihvate i priznaju taj čin slobodne volje hrvatskog naroda. </p>
 
 <h2>Ustav</h2>
 <p class="Pocetak">Ustav Hrvatske je najviši pravni akt u Hrvatskoj. Usvojen je 22. decembar 1990, nakon prvih demokratskih višestranačkih parlamentarnih izbora održanih u proljeće 1990. <a class="sve" href="https://hr.wikipedia.org/wiki/Ustav">Ustav</a> je revidiran u novembru 1997, novembru 2000. i martu 2001. Promjenom Ustava u novembru 2000. ukinut je polupredsjednički sistem i uveden parlamentarni sistem uz jaču ulogu Vlade Republike Hrvatske te premijera, dok je promjenom u martu 2001. godine ukinut Županijski dom Sabora te je Hrvatski sabor postao jednodoman.
@@ -60,7 +83,7 @@ Ustav definira Hrvatsku kao suverenu, jedinstvenu, demokratsku i socijalnu drža
 <h3>Izvršna vlast</h3>
 <p class="Pocetak">Predsjedniku Republike pripada i predstavnička i <a class="sve" href="http://croatia.eu/article.php?lang=1&id=28">izvršna funkcija</a>. On predstavlja i zastupa Republiku Hrvatsku u zemlji i inostranstvu. Nadležan je za odbranu nezavisnosti i teritorijalne cjelovitosti Republike Hrvatske, kao i za stabilno, normalno i usklađeno djelovanje državne vlasti.
 
-Predsjednik se bira na osnovu općeg i jednakog biračkog prava na neposrednim izborima tajnim glasanjem na period od pet godina. Niko ne može biti više od dva puta biran za predsjednika Republike.
+Predsjednik se bira <span style="background-color: #6BACFF">na osnovu općeg i jednakog biračkog prava na neposrednim izborima tajnim glasanjem na period od pet godina</span>. Niko ne može biti više od dva puta biran za predsjednika Republike.
 
 Predsjednik Republike raspisuje izbore za Hrvatski sabor, raspisuje referendum, povjerava mandat za sastavljanje Vlade osobi koja, na osnovu raspodjele zastupničkih mjesta u Hrvatskom saboru, uživa povjerenje većine svih zastupnika, daje pomilovanja, dodjeljuje odlikovanja i priznanja, te obavlja druge dužnosti određene Ustavom. U saradnji s Vladom, Predsjednik učestvuje u oblikovanju i provedbi vanjske politike, odlučuje o osnivanju diplomatskih misija, postavljanju i opozivu šefova diplomatskih misija RH u inostranstvu, daje vjerodajnice i prima vjerodajnice šefova stranih diplomatskih misija.</p>
 <h3>Sudska vlast</h3>
@@ -68,7 +91,7 @@ Predsjednik Republike raspisuje izbore za Hrvatski sabor, raspisuje referendum, 
 
 Vrhovni sud Republike Hrvatske je najviši sud u državi. Zasjedanja suda su otvorena za javnost i presude se donose javno, osim u pitanjima privatnosti optuženih. Suci se imenuju na period od osam godina.
 
-Državno sudbeno vijeće u skladu s ustavom i zakonom imenuje, razrješuje i odlučuje o disciplinskoj odgovornosti sudaca. Ima jedanaest članova iz redova istaknutih sudaca, advokata i univerzitetskih profesora pravnih nauka, s tim da većina članova Državnog sudbenog vijeća mora biti iz redova sudaca. Predsjednici sudova ne mogu biti birani za njegove članove.</p>
+Državno sudbeno vijeće u skladu s ustavom i zakonom imenuje, razrješuje i odlučuje o disciplinskoj odgovornosti sudaca. Ima <span style="background-color: #6BACFF">jedanaest članova</span> iz redova istaknutih sudaca, advokata i univerzitetskih profesora pravnih nauka, s tim da većina članova Državnog sudbenog vijeća mora biti iz redova sudaca. Predsjednici sudova ne mogu biti birani za njegove članove.</p>
 <br>
 <p style="text-align:center"><a href="http://predsjednica.hr/stranica/5/"><img src="IMG\kolinda.jpg" alt="Kolinda"></a></p>
 

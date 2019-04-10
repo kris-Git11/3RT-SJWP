@@ -16,7 +16,6 @@
 
 
 
-
 <div class="vrh">
 <p></p>
 <br>
@@ -94,6 +93,9 @@
 
 </div>
 
+
+</div>
+
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -121,15 +123,32 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-</script>
-</div>
 
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+</script>
 <br>
 <br>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Idi na vrh</button>
 
 <div class="row">
   <div class="column" style="background-color:#d9d9d9;"><h2>Općenito</h2>
-  <p class="Pocetak">Hrvatska (službeni naziv: Republika Hrvatska) je europska država, u geopolitičkom smislu srednjoeuropska i sredozemna država, a zemljopisno smještena u južnom dijelu Srednje Europe te u sjevernom dijelu Sredozemlja. Na sjeveru graniči sa Slovenijom i Mađarskom, na istoku sa Srbijom i Bosnom i Hercegovinom, na jugu s Crnom Gorom, dok na zapadu s Italijom ima morsku granicu. Kopnena površina iznosi 56.578 km², a površina obalnog mora 31.067 km² što Hrvatsku svrstava među srednje velike europske zemlje. Glavni grad je Zagreb, koji je političko, kulturno, znanstveno i gospodarsko središte Republike Hrvatske. Tijekom <a class="interna" href="Povijest.html">hrvatske povijesti</a> najznačajniji kulturološki utjecaji dolazili su iz srednjoeuropskog i sredozemnog kulturnog kruga.</p>
+  <p class="Pocetak">Hrvatska (službeni naziv: Republika Hrvatska) je europska država, u geopolitičkom smislu srednjoeuropska i sredozemna država, a zemljopisno smještena u južnom dijelu Srednje Europe te u sjevernom dijelu Sredozemlja. Na sjeveru graniči sa Slovenijom i Mađarskom, na istoku sa Srbijom i Bosnom i Hercegovinom, na jugu s Crnom Gorom, dok na zapadu s Italijom ima morsku granicu. Kopnena površina iznosi 56.578 km², a površina obalnog mora 31.067 km² što Hrvatsku svrstava među srednje velike europske zemlje. Glavni grad je <span style="background-color: #6BACFF">Zagreb</span>, koji je političko, kulturno, znanstveno i gospodarsko središte Republike Hrvatske. Tijekom <a class="interna" href="Povijest.html">hrvatske povijesti</a> najznačajniji kulturološki utjecaji dolazili su iz srednjoeuropskog i sredozemnog kulturnog kruga.</p>
 
 <h2>Geografija</h2>
 <p class="Pocetak">Hrvatska ima:</p>
@@ -147,7 +166,7 @@ function showSlides(n) {
 <p>Najviša točka: Dinara, 1.831 metar.</p>
 <p>Važniji gradovi u Hrvatskoj su <a class="sve" href="https://www.zagreb.hr/">Zagreb (glavni grad)</a>, Split, Dubrovnik, Rijeka, Osijek, Zadar, Karlovac, Pula, Sisak, Knin, Gospić (sjedište najveće hrvatske županije) Šibenik, Slavonski Brod, Mali Lošinj (najveći i najrazvijeniji otočni grad) i Vukovar (najveća riječna luka u Hrvatskoj). (Dodatak: <a  class="sve" href="https://hr.wikipedia.org/wiki/Gradovi_u_Hrvatskoj">Popis gradova u Hrvatskoj</a>).</p>
 <h2>Klima</h2>
-<p class="Pocetak">Klima je u unutrašnjosti Hrvatske umjereno kontinentalna, u gorskoj Hrvatskoj pretplaninska i planinska, u primorskom dijelu mediteranska (sa suhim i toplim ljetima te vlažnim i blagim zimama), a u zaleđu submediteranska (s nešto hladnijim zimama i toplijim ljetima). Na klimu Hrvatske utječe položaj u <a class="sve" href="https://zivotistil.rtl.hr/edukacija/3219125/toplinski-pojasevi-zemlje-i-njihova-znacenja/">sjevernom umjerenom pojasu</a>.
+<p class="Pocetak">Klima je u unutrašnjosti Hrvatske <span style="background-color: #6BACFF">umjereno kontinentalna</span>, u gorskoj Hrvatskoj pretplaninska i planinska, u primorskom dijelu mediteranska (sa suhim i toplim ljetima te vlažnim i blagim zimama), a u zaleđu submediteranska (s nešto hladnijim zimama i toplijim ljetima). Na klimu Hrvatske utječe položaj u <a class="sve" href="https://zivotistil.rtl.hr/edukacija/3219125/toplinski-pojasevi-zemlje-i-njihova-znacenja/">sjevernom umjerenom pojasu</a>.
 
 Prosječna temperatura u unutrašnjosti: siječanj 0 do 2 °C, kolovoz 19 do 23 °C dok je prosječna temperatura u primorju: siječanj 6 do 11 °C, kolovoz 21 do 27 °C.
 
