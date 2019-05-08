@@ -1,0 +1,90 @@
+body {
+    margin: 5px;
+    color: ghostwhite;
+    font-size: 20px;
+    /*-webkit-text-stroke: 0.1px rgb(177, 177, 177);*/
+}
+/*
+.container-fluid {
+    border: 1px solid black;
+}*/
+
+.col-sm-2, .col-sm-1 {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+#h {
+    background-color: dodgerblue;
+}
+
+#gr {
+    background-color: blue;
+}
+
+#vj {
+    background-color: rgb(143, 84, 8);
+}
+
+#mk {
+    background-color: grey;
+}
+
+#rm {
+    background-color: greenyellow;
+}
+
+#eng {
+    background-color: red;
+}
+
+#mat {
+    background-color: rgb(250, 84, 228);
+}
+
+#sj {
+    background-color: orange;
+}
+
+#op {
+    background-color: blueviolet;
+}
+
+#fz {
+    background-color: green;
+}
+
+#bp {
+    background-color: rgb(233, 189, 44);
+}
+
+#dj {
+    background-color: rgb(56, 177, 31);
+}
+
+#nop {
+    background-color: rgb(14, 85, 177);
+}
+
+#prm {
+    background-color: rgb(189, 105, 178);
+}
+
+#sro {
+    background-color: blue;
+}
+
+#pmu {
+    background-color: rgb(171, 29, 236);
+}
+
+#hr {
+    background-color: gainsboro;
+}
+
+#tzk {
+    background-color: rgb(206, 241, 6);
+}
