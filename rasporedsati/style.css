@@ -1,0 +1,121 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  background-color: #b9936c;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #e6e2d3;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 25px;
+}
+
+#dan{
+  background-color: #c4b7a6;
+}
+
+#satnica{
+  background-color: #c4b7a6;
+}
+
+#spojeno{
+  padding-top: 15px;
+}
+
+.grada{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.mat{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+.fiz{
+  grid-row-start: 4;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+.rm{
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+.bp{
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+.hr{
+  grid-row-start: 7;
+  grid-row-end: 9;
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+.tzk{
+  grid-row-start: 7;
+  grid-row-end: 9;
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+.en{
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+.prog{
+  grid-row-start: 6;
+  grid-row-end: 8;
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+.mp{
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 6;
+  grid-column-end: 6;
+}
+.pg{
+  grid-row-start: 6;
+  grid-row-end: 8;
+  grid-column-start: 6;
+  grid-column-end: 6;
+}
+
+
+
+.sati{
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.pon {
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+.uto {
+  grid-column-start: 3;
+  grid-column-end: 3;
+}
+.sri {
+  grid-column-start: 4;
+  grid-column-end: 4;
+}
+.cet {
+  grid-column-start: 5;
+  grid-column-end: 5;
+}
+.pet {
+  grid-column-start: 6;
+  grid-column-end: 6;
+}
