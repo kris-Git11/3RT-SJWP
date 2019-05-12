@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid;
+  grid-gap: 5px;
+  background-color: #2196F3;
+  padding: 7px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.brojevi {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.ponedjeljak {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+.utorak {
+  grid-column: 4 / span 2;
+  grid-row: 1;
+}
+
+.srijeda {
+  grid-column: 6 / span 2;
+  grid-row: 1;
+}
+
+.cetvrtak {
+  grid-column: 8 / span 2;
+  grid-row: 1;
+}
+
+.petak {
+  grid-column: 10 / span 2;
+  grid-row: 1;
+}
