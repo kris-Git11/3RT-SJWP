@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts/fonts.css" type="text/css" charset="utf-8" />
+  <title>Kontakt</title>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Nazad</a></li>
+      <li style="float:right"><a href="kontakt.html" id="active">Kontakt</a></li>
+    </ul>
+  </nav>
+
+<form id="form1">
+  Ime:<br>
+  <input type="text" name="firstname"><br>
+  Prezime:<br>
+  <input type="text" name="lastname"><br>
+  E-mail:<br>
+  <input type="email" name="email"><br>
+  Poruka:<br>
+  <textarea style="display:block;" rows="10" cols="56" name="poruka" form="form1" id="poruka"></textarea>
+  <button type="button" onclick="alert('Poruka je poslana uspješno!')" id="button">Pošalji!</button>
+</form>
+
+
+</body>
+
+<footer>
+  <p><a id="fut" target="_blank"; href = "http://toni-polanec.from.hr/">toni.polanec.from.hr</a></p>
+</footer>
+</html>
